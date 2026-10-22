@@ -1,0 +1,9 @@
+zone "neracomult.local" {
+    type master;
+    file "/etc/bind/db.neracomult.local";
+};
+
+zone "31.172.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.172.31";
+};

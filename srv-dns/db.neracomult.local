@@ -1,0 +1,20 @@
+$TTL    604800
+@       IN      SOA     dns.neracomult.local. admin.neracomult.local. (
+                              2026101202 ; Serial
+                              604800     ; Refresh
+                               86400     ; Retry
+                             2419200     ; Expire
+                              604800 )   ; Negative cache TTL
+;
+@       IN      NS      dns.neracomult.local.
+
+dns        IN      A       172.31.46.155
+portail    IN      A       172.31.28.232
+archives   IN      A       172.31.17.126
+fichiers   IN      A       172.31.31.18
+backup     IN      A       172.31.30.159
+
+srv-web    IN      CNAME   portail.neracomult.local.
+srv-nfs    IN      CNAME   archives.neracomult.local
+srv-samba  IN      CNAME   fichiers.neracomult.local.
+srv-ftp    IN      CNAME   backup.neracomult.local.

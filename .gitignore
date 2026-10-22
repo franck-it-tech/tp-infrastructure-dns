@@ -1,0 +1,7 @@
+*.vdi
+*.vmdk
+*.iso
+*.tar.gz
+*.key
+id_*
+.DS_Store
